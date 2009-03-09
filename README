@@ -1,0 +1,23 @@
+Fillers
+--------------------
+
+Description:
+App intended to help with practicing a speech by showing you a visual representation of all fillers used during a practice run.
+
+Roadmap:
+-Phase 1-
+* web app with a few preset filler options: um, like, ahh, <long pause>
+* requires two people to use: 1 person doing the speech and the other clicking buttons
+
+-Phase 2-
+* (GNOME) desktop app with same functionality
+
+-Phase 3-
+* new mode with upload pre-recorded speech
+* app analyzes audio and finds fillers
+
+-Phase 4-
+* real-time audio recording/analysis to find fillers
+
+-Phase 5-
+* iPhone app
