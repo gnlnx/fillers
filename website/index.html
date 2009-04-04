@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>Fillers</title>
+	        <script type="text/javascript" src="lib/jquery-1.3.2.min.js"></script>
 	        <script type="text/javascript" src="iui/iui.js"></script>
 	        <meta name="viewport" content="width=devicewidth; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
 	        <link rel="apple-touch-icon" href="iui/iui-logo-touch-icon.png" />
@@ -12,6 +13,16 @@
 				display: inline !important;
 				}
 		</style>
+		<script type="text/javascript">
+		$( function() {
+			$( 'a.whiteButton' ).click( function() {
+				var count_span = $( this ).children( 'span.count' );
+				var count = 1 + parseInt( $( count_span ).html() );
+				$( count_span ).html( count );
+				return false;
+			});
+		});
+		</script>
 	</head>
 	<body>
 		<div class="toolbar">
@@ -22,14 +33,14 @@
 		<form title="Fillers" class="panel" action="search.php" method="POST" selected="true">
 			<div style="text-align: center">
 				<br />
-				<a class="whiteButton" type="submit" href="#">UM</a>
-				<a class="whiteButton" type="submit" href="#">LIKE</a>
-				<a class="whiteButton" type="submit" href="#">STUFF</a>
+				<a class="whiteButton" type="submit" href="#">um (<span class="count">0</span>)</a>
+				<a class="whiteButton" type="submit" href="#">like (<span class="count">0</span>)</a>
+				<a class="whiteButton" type="submit" href="#">stuff (<span class="count">0</span>)</a>
 				<br /> <br /> <br />
-				<a class="whiteButton" type="submit" href="#">AAHH</a>
-				<a class="whiteButton" type="submit" href="#">SWAYING</a>
+				<a class="whiteButton" type="submit" href="#">aahh (<span class="count">0</span>)</a>
+				<a class="whiteButton" type="submit" href="#">swaying (<span class="count">0</span>)</a>
 				<br /> <br /> <br />
-				<a class="whiteButton" type="submit" href="#">LONG PAUSE</a>
+				<a class="whiteButton" type="submit" href="#">long pause (<span class="count">0</span>)</a>
 			</div>
 		</form>
 	</body>
