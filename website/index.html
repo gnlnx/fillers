@@ -1,25 +1,36 @@
 <html>
 	<head>
 		<title>Fillers</title>
-		<script type="text/javascript" src="lib/jquery-1.3.2.min.js"></script>
-		<script type="text/javascript" src="lib/jquery.borderline.js"></script>
-		<script type="text/javascript">
-			jQuery( function() {
-				$( 'ul *' ).borderline();
-			});
-		</script>
-		<style type="text/css"> @import url( 'css/site.css' ); </style>
+	        <script type="text/javascript" src="iui/iui.js"></script>
+	        <meta name="viewport" content="width=devicewidth; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+	        <link rel="apple-touch-icon" href="iui/iui-logo-touch-icon.png" />
+	        <meta name="apple-touch-fullscreen" content="YES" />
+	        <style type="text/css" media="screen">
+			@import url( 'iui/iui.css'); 
+
+			.whiteButton {
+				display: inline !important;
+				}
+		</style>
 	</head>
 	<body>
-		<div id="content">
-			<h1>Fillers</h1>
-			<ul id="fillers">
-				<li><a href="#um">um</a></li>
-				<li><a href="#like">like</a></li>
-				<li><a href="#aahh">aahh</a></li>
-				<li><a href="#_repeat_"><em>_repeat_</em></a></li>
-				<li><a href="#_swaying"><em>_swaying_</em></a></li>
-			</ul>
+		<div class="toolbar">
+			<h1 id="pageTitle"></h1>
+			<a id="backButton" class="button" href="#"></a>
 		</div>
+
+		<form title="Fillers" class="panel" action="search.php" method="POST" selected="true">
+			<div style="text-align: center">
+				<br />
+				<a class="whiteButton" type="submit" href="#">UM</a>
+				<a class="whiteButton" type="submit" href="#">LIKE</a>
+				<a class="whiteButton" type="submit" href="#">STUFF</a>
+				<br /> <br /> <br />
+				<a class="whiteButton" type="submit" href="#">AAHH</a>
+				<a class="whiteButton" type="submit" href="#">SWAYING</a>
+				<br /> <br /> <br />
+				<a class="whiteButton" type="submit" href="#">LONG PAUSE</a>
+			</div>
+		</form>
 	</body>
 </html>
