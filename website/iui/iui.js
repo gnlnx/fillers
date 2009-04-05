@@ -383,7 +383,9 @@ function preloadImages()
 
 function submitForm(form)
 {
-    iui.showPageByHref(form.action || "POST", encodeForm(form), form.method);
+    // added to prevent submitting thus refreshing the page.
+    if( 'NOSUBMIT' != form.getAttribute( 'type' ) )
+        iui.showPageByHref(form.action || "POST", encodeForm(form), form.method);
 }
 
 function encodeForm(form)

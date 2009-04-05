@@ -15,10 +15,15 @@
 		</style>
 		<script type="text/javascript">
 		$( function() {
-			$( 'a.whiteButton' ).click( function() {
+			$( 'a.whiteButton' ).click( function( e ) {
 				var count_span = $( this ).children( 'span.count' );
 				var count = 1 + parseInt( $( count_span ).html() );
 				$( count_span ).html( count );
+
+				return false;
+			});
+
+			$( 'form.panel' ).submit( function() {
 				return false;
 			});
 		});
@@ -30,7 +35,7 @@
 			<a id="backButton" class="button" href="#"></a>
 		</div>
 
-		<form title="Fillers" class="panel" action="search.php" method="POST" selected="true">
+		<form title="Fillers" class="panel" selected="true" type="NOSUBMIT">
 			<div style="text-align: center">
 				<br />
 				<a class="whiteButton" type="submit" href="#">um (<span class="count">0</span>)</a>
